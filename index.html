@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Pokedex</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            setTimeout(function() {
+                $(".content").fadeOut(1500);
+            },3000);
+            
+            setTimeout(function() {
+                $(".content2").fadeIn(1500);
+            },6000);
+            
+            setTimeout(function() {
+                $(".content2").fadeOut(1500);
+            },9000);
+            
+            setTimeout(function() {
+                $(".content3").fadeIn(1500);
+            },12000);
+            
+            setTimeout(function() {
+                $(".content3").fadeOut(1500);
+            },15000);
+        });
+        </script>
+    </head>
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+            
+            <a href="index.html" class="logo mr-auto"></a>
+            
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html"><img src="pokemon.png" alt="Pokemon" class="img-fluid"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <h1>Pokedex</h1>
+        <div class="temp-text">
+            <div class="content">Welcome to my Pokedex!</div>
+            <div class="content2" style="display:none;">You will be able to see all the pokemon found so far.</div>
+            <div class="content3" style="display:none;">Touching the pokeball takes you back to the beginning!</div>
+        </div>
+        <div class="poke-container" id="poke-container"></div>
+        <script src="script.js"></script>
+        <div class="flex-container">
+            <form class="form">
+                <div class="form__section">
+                    <h2>Which pokemon is missing?</h2>
+                </div>
+                <div class="form__section">
+                    <input type="text" class="form__input" placeholder="Pokemon name">
+                </div>
+                <div class="form__section">
+                    <input type="text" class="form__input" placeholder="Pokemon type">
+                </div>
+                <div class="form__section">
+                    <textarea class="form__input" placeholder="Additional information (optional)"></textarea>
+                </div>
+                <div class="form__section">
+                    <input type="submit" class="form__input" value="Send">
+                </div>
+            </form>
+            <div class="form-img">
+                <div class="img-container">
+                    <div>
+                        <img src="mail.png">
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="copyright">
+        <p>Copyright 2022 Facundo Ferrari. All right reserved.</p>
+    </div>
+</footer>
+</html>
